@@ -10,14 +10,30 @@
     <title>szamonkeres</title>
   </head>
   <body>
-    <label for="">Adja meg a nevét!</label><br>
-    <input type="text"><br>
-    <label for="">Adja meg az Email-t!</label><br>
-    <input type="text"><br>
-    <label for="">Adja meg a jelszavat!</label><br>
-    <input type="text"><br>
 
-    
+      <div class="container">
+        <h2>Bejelentkezés</h2>
+        <form action="/action_page.php" id="regisztralas">
+          <div class="form-group">
+            <label for="email">Név:</label>
+            <input type="email" class="form-control" id="nev" placeholder="írd be a nevet!" name="nev">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Email:</label>
+            <input type="password" class="form-control" id="email" placeholder="írd be az emailt!" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Jelszo:</label>
+            <input type="password" class="form-control" id="jelszo" placeholder="írd be a Jelszót!" name="jelszo">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+
+      <div id="uzenet" class="alert alert-success" style="margin-top:20px; display:none;">
+        Sikeres regisztráció!
+      </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
